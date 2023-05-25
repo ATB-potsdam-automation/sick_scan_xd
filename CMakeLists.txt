@@ -18,7 +18,7 @@ if(WIN32)
 elseif(LDMRS EQUAL 0)
     option(BUILD_WITH_LDMRS_SUPPORT "Build sick_scan_xd with LDMRS support (ON, libsick_ldmrs from https://github.com/SICKAG/libsick_ldmrs required) or without LDMRS support (OFF)" OFF)
 else()
-    option(BUILD_WITH_LDMRS_SUPPORT "Build sick_scan_xd with LDMRS support (ON, libsick_ldmrs from https://github.com/SICKAG/libsick_ldmrs required) or without LDMRS support (OFF)" ON)
+    option(BUILD_WITH_LDMRS_SUPPORT "Build sick_scan_xd with LDMRS support (ON, libsick_ldmrs from https://github.com/SICKAG/libsick_ldmrs required) or without LDMRS support (OFF)" OFF)
 endif()
 
 # MRS100/SCANSEGMENT_XD/MULTISCAN136 build options

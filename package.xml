@@ -35,6 +35,7 @@
   <depend>visualization_msgs</depend>
 
   <depend condition="$ROS_VERSION == 2">rcl_interfaces</depend>
+  <depend condition="$ROS_VERSION == 2">diagnostic_updater</depend>
 
   <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">rospy</exec_depend>

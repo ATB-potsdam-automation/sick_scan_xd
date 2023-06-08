@@ -22,7 +22,7 @@ if(WIN32)
 elseif(LDMRS EQUAL 0)
     set(BUILD_WITH_LDMRS_SUPPORT OFF CACHE BOOL "Build ${PROJECT_NAME} with LDMRS support (ON, libsick_ldmrs from https://github.com/SICKAG/libsick_ldmrs required) or without LDMRS support (OFF)" FORCE)
 else()
-    set(BUILD_WITH_LDMRS_SUPPORT ON CACHE BOOL "Build ${PROJECT_NAME} with LDMRS support (ON, libsick_ldmrs from https://github.com/SICKAG/libsick_ldmrs required) or without LDMRS support (OFF)" FORCE)
+    set(BUILD_WITH_LDMRS_SUPPORT "Build sick_scan_xd with LDMRS support (ON, libsick_ldmrs from https://github.com/SICKAG/libsick_ldmrs required) or without LDMRS support (OFF)" OFF)
 endif()
 
 # SCANSEGMENT_XD/MULTISCAN136 build options

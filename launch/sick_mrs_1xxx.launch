@@ -9,11 +9,11 @@ default max_angle for this scanner type is +137.5 degree.
 -->
 <!-- Using node option required="true" will close roslaunch after node exits -->
 <launch>
-    <arg name="hostname" default="192.168.0.1"/>
+    <arg name="hostname" default="192.168.54.222"/>
     <arg name="cloud_topic" default="cloud"/>
     <arg name="frame_id" default="cloud"/>
     <arg name="sw_pll_only_publish" default="true"/>
-    <arg name="imu_frame_id" default="imu_link"/> 
+    <arg name="imu_frame_id" default="cloud"/> 
     <arg name="nodename" default="sick_mrs_1xxx"/>
     <arg name="add_transform_xyz_rpy" default="0,0,0,0,0,0"/>
     <arg name="add_transform_check_dynamic_updates" default="false"/> <!-- Note: dynamical updates of parameter add_transform_xyz_rpy can decrease the performance and is therefor deactivated by default -->
@@ -36,6 +36,7 @@ default max_angle for this scanner type is +137.5 degree.
           <param name="range_min" type="double" value="0.05" />
           <param name="range_max" type="double" value="100.0" />
         -->
+        <!-- <param name="filter_echos" type="int" value="0" /> -->
         <param name="scanner_type" type="string" value="sick_mrs_1xxx"/>
         <param name="min_ang" type="double" value="-2.3998277"/>
         <param name="max_ang" type="double" value="+2.3998277"/>
